@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the clustered data
-data = pd.read_csv('C:\\Users\\ABEL\\clustered_sport_articles.csv')
+data = pd.read_csv('clustered_sport_articles.csv')
 
 # Create a sidebar for selecting clusters
 selected_cluster = st.sidebar.selectbox('Select Cluster', sorted(data['Cluster'].unique()))
